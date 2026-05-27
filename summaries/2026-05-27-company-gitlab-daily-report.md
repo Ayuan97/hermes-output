@@ -1,42 +1,86 @@
-# 2026-05-27 公司 GitLab 每日项目进度汇报
+# 2026-05-27 公司 GitLab 每日项目进度汇报（改进版）
 
-- 统计窗口：2026-05-26 14:18 ~ 2026-05-27 14:18（北京时间）
-- GitLab：https://gitlab.e-idear.com
-- 扫描项目数：40；近 24 小时有活动项目数：5；活跃人员数：5
+- 统计窗口：2026-05-26 14:25 ~ 2026-05-27 14:25（北京时间）
+- 统计口径：覆盖默认分支、dev/develop、feature/release/hotfix 等最近 72 小时活跃分支，并补充 MR / Issue / Pipeline。
+- 扫描项目：60；有活动项目：8；有动作人员：13。
 
-## 今日一句话总览
-近 24 小时共有 **5** 个项目有活动，**5** 位成员出现提交/MR/Issue 动作；需重点关注 **0** 个风险点。
+## 一句话结论
+近 24 小时推进集中在 enginer/justus-content-core 等 5 个项目；存在 7 个风险需跟进。
 
-## 项目进展摘要
-- **root/whale-flow**：提交 31，MR 更新 0，Issue 更新 0，最新 Pipeline：`无近 24h pipeline`。https://gitlab.e-idear.com/root/whale-flow
-- **enginer/engine-image-generation**：提交 1，MR 更新 0，Issue 更新 0，最新 Pipeline：`无近 24h pipeline`。https://gitlab.e-idear.com/enginer/engine-image-generation
-- **enginer/justus-content-core**：提交 0，MR 更新 5，Issue 更新 0，最新 Pipeline：`success`。https://gitlab.e-idear.com/enginer/justus-content-core
-- **enginer/justuscut**：提交 0，MR 更新 2，Issue 更新 0，最新 Pipeline：`success`。https://gitlab.e-idear.com/enginer/justuscut
-- **zhaowenlong/lnct-web**：提交 0，MR 更新 0，Issue 更新 0，最新 Pipeline：`success`。https://gitlab.e-idear.com/zhaowenlong/lnct-web
+## 项目看板
+- **enginer/justus-content-core**｜分支：dev、feat/video-agent、feature/agent-billing-precheck、fix/dev-hank、dev-gq｜提交 38 / MR 6 / Issue 0 / Pipeline failed,success｜人员：guoqiang、guoqiang ton、hank、hank hank｜**需跟进 pipeline**
+- **zhaowenlong/lnct-web**｜分支：dev、feat/seeding-note-workflow、feat/video-agent、dev-duouo、dev-duouo-v2｜提交 23 / MR 0 / Issue 0 / Pipeline canceled,failed,pending,running,success｜人员：hank、hd、lichengduo、wj｜**需跟进 pipeline**
+- **root/whale-flow**｜分支：main｜提交 31 / MR 0 / Issue 0 / Pipeline 无｜人员：zhaowenlong｜**提交密集，注意验收节奏**
+- **enginer/justuscut**｜分支：feat/video-agent、dev-gq、v3/dev、v3/dev-qh、v3/fix/dev-hank｜提交 7 / MR 2 / Issue 0 / Pipeline failed,success｜人员：hank、hank hank、qh、yuqiao.xu｜**需跟进 pipeline**
+- **enginer/justus-web**｜分支：feat/video-agent、web-admin-v2｜提交 5 / MR 0 / Issue 0 / Pipeline 无｜人员：hank、yuqiao.xu｜**正常推进**
+- **enginer/engine-image-generation**｜分支：main｜提交 2 / MR 0 / Issue 0 / Pipeline 无｜人员：guoqiang、赵华鹏｜**正常推进**
+- **customers/duoyan-ai**｜分支：master｜提交 0 / MR 0 / Issue 0 / Pipeline 无｜人员：暂无｜**正常推进**
+- **enginer/ln-agents**｜分支：v2/dev、v2/dev-hank｜提交 0 / MR 0 / Issue 0 / Pipeline 无｜人员：暂无｜**正常推进**
 
-## 人员开发进度
-- **zhaowenlong**：提交 31，MR 动作 0，Issue 动作 0；涉及项目：root/whale-flow。主要提交：feat(engine): 批 238 §6.3.3 agent self-edit · memory.add 工具(通用工作集持久化)；fix(engine): 批 237 修 studio 251 · 操作事实/进度独立注入 system prompt(防卡步骤0)；fix(engine): 批 236 修 studio 250 · active-run 检查移出 speedMode 跳过块(防同 agent 并发重叠)
-- **guoqiang**：提交 1，MR 动作 0，Issue 动作 0；涉及项目：enginer/engine-image-generation。主要提交：fix(video): enforce seedance duration envelope at model layer
-- **huang huangd**：提交 0，MR 动作 3，Issue 动作 0；涉及项目：enginer/justus-content-core。
-- **hank hank**：提交 0，MR 动作 2，Issue 动作 0；涉及项目：enginer/justus-content-core、enginer/justuscut。
-- **赵华鹏**：提交 0，MR 动作 2，Issue 动作 0；涉及项目：enginer/justus-content-core、enginer/justuscut。
+## 人员看板
+- **zhaowenlong**｜提交 31 / MR 0 / Issue 0｜项目：root/whale-flow｜分支：root/whale-flow:main｜**推进很活跃，注意 review/验收**
+- **hd**｜提交 17 / MR 0 / Issue 0｜项目：enginer/justus-content-core、zhaowenlong/lnct-web｜分支：enginer/justus-content-core:dev、enginer/justus-content-core:hd_dev、zhaowenlong/lnct-web:dev｜**推进很活跃，注意 review/验收**
+- **hank**｜提交 11 / MR 0 / Issue 0｜项目：enginer/justus-content-core、enginer/justus-web、enginer/justuscut｜分支：enginer/justus-content-core:dev、enginer/justus-web:web-admin-v2、enginer/justuscut:dev-gq｜**正常推进**
+- **zhaohua**｜提交 8 / MR 0 / Issue 0｜项目：enginer/justus-content-core、enginer/justuscut、zhaowenlong/lnct-web｜分支：enginer/justus-content-core:dev、enginer/justus-content-core:feature/agent-billing-precheck、enginer/justuscut:dev-gq｜**正常推进**
+- **赵华鹏**｜提交 6 / MR 2 / Issue 0｜项目：enginer/engine-image-generation、enginer/justus-content-core、enginer/justuscut｜分支：enginer/engine-image-generation:未知分支(all=true)、enginer/justus-content-core:dev、enginer/justus-content-core:未知分支(all=true)｜**正常推进**
+- **lichengduo**｜提交 7 / MR 0 / Issue 0｜项目：zhaowenlong/lnct-web｜分支：zhaowenlong/lnct-web:dev｜**正常推进**
+- **huang huangd**｜提交 4 / MR 4 / Issue 0｜项目：enginer/justus-content-core｜分支：enginer/justus-content-core:未知分支(all=true)｜**正常推进**
+- **hank hank**｜提交 4 / MR 2 / Issue 0｜项目：enginer/justus-content-core、enginer/justuscut｜分支：enginer/justus-content-core:dev、enginer/justus-content-core:未知分支(all=true)、enginer/justuscut:dev-gq｜**正常推进**
+- **wj**｜提交 5 / MR 0 / Issue 0｜项目：zhaowenlong/lnct-web｜分支：zhaowenlong/lnct-web:dev-wj-workflow｜**正常推进**
+- **yuqiao.xu**｜提交 4 / MR 0 / Issue 0｜项目：enginer/justus-content-core、enginer/justus-web、enginer/justuscut｜分支：enginer/justus-content-core:feat/video-agent、enginer/justus-web:feat/video-agent、enginer/justuscut:feat/video-agent｜**正常推进**
+- **guoqiang**｜提交 4 / MR 0 / Issue 0｜项目：enginer/engine-image-generation、enginer/justus-content-core｜分支：enginer/engine-image-generation:main、enginer/justus-content-core:dev-gq｜**正常推进**
+- **qh**｜提交 4 / MR 0 / Issue 0｜项目：enginer/justus-content-core、enginer/justuscut｜分支：enginer/justus-content-core:dev-qh、enginer/justuscut:v3/dev-qh｜**正常推进**
+- 另有 1 人有动作，详见完整明细。
 
-## 风险与阻塞
-- 暂未发现失败 pipeline、草稿 MR 等明显风险。
+## 风险/阻塞
+- 【高】enginer/justus-content-core pipeline failed（ref=refs/merge-requests/290/head）
+- 【高】enginer/justus-content-core pipeline failed（ref=hd_dev）
+- 【高】enginer/justus-content-core pipeline failed（ref=hd_dev）
+- 【高】zhaowenlong/lnct-web pipeline canceled（ref=dev-wj-workflow）
+- 【高】zhaowenlong/lnct-web pipeline canceled（ref=dev）
 
-## 近 24 小时无明显动静的项目（抽样）
-- enginer/justus-web：最后活动 2026-05-27T05:04:15.713Z
-- customers/duoyan-ai：最后活动 2026-05-26T02:29:57.905Z
-- enginer/ln-agents：最后活动 2026-05-25T05:50:57.363Z
-- customers/scripts：最后活动 2026-05-23T08:14:17.801Z
-- enginer/engine-auto-test：最后活动 2026-05-20T10:37:33.014Z
-- zhaowenlong/livephoto-app：最后活动 2026-05-15T09:35:08.016Z
-- enginer/team-daily-progress：最后活动 2026-05-15T09:03:13.830Z
-- enginer/gotools：最后活动 2026-05-12T07:40:45.222Z
-- root/oa-new：最后活动 2026-05-07T09:22:12.885Z
-- root/justus-client：最后活动 2026-04-30T00:10:06.101Z
+## 明日跟进
+- 优先处理：enginer/justus-content-core pipeline failed（ref=refs/merge-requests/290/head）
+- enginer/justus-content-core：MR 较活跃，安排 review/合并节奏。
+- enginer/justus-content-core：提交密集，确认阶段验收和回归测试。
+- zhaowenlong/lnct-web：提交密集，确认阶段验收和回归测试。
+- root/whale-flow：提交密集，确认阶段验收和回归测试。
 
-## 明天建议跟进事项
-- 对失败/异常 Pipeline 对应项目安排负责人定位。
-- 对 24 小时无动静但处于关键阶段的项目，确认是否实际推进在线下或其他分支。
-- 对活跃提交较多的成员，检查是否有 MR 需要及时 review，避免堆积。
+## 完整明细：活跃分支提交数
+### enginer/justus-content-core
+- dev: 20 commits
+- feat/video-agent: 1 commits
+- feature/agent-billing-precheck: 13 commits
+- fix/dev-hank: 7 commits
+- dev-gq: 19 commits
+- dev-qh: 14 commits
+- hd_dev: 22 commits
+### zhaowenlong/lnct-web
+- dev: 17 commits
+- feat/video-agent: 1 commits
+- dev-duouo: 13 commits
+- dev-hank: 5 commits
+- dev-hd: 15 commits
+- dev-wj-workflow: 20 commits
+- dev-zzz2: 15 commits
+### root/whale-flow
+- main: 31 commits
+### enginer/justuscut
+- feat/video-agent: 1 commits
+- dev-gq: 3 commits
+- v3/dev: 3 commits
+- v3/dev-qh: 1 commits
+- v3/fix/dev-hank: 1 commits
+- v3/hd: 3 commits
+### enginer/justus-web
+- feat/video-agent: 1 commits
+- web-admin-v2: 4 commits
+### enginer/engine-image-generation
+- main: 1 commits
+### customers/duoyan-ai
+- 无分支级提交，但存在 MR/Issue/Pipeline 活动。
+### enginer/ln-agents
+- 无分支级提交，但存在 MR/Issue/Pipeline 活动。
+
+## 统计限制
+- `all=true` 补充分支提交；若个别项目 API 不支持，会以活跃分支扫描结果为准。
