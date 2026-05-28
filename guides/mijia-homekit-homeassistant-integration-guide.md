@@ -47,6 +47,88 @@ Home Assistant（HA）是开源智能家居中枢，适合把米家、Apple Home
 
 ---
 
+## 补充：小米智能家居的大模型 / AI Agent 新进展
+
+主子问到“米家以前基本是规则驱动，现在大模型这么火，小米有没有模型相关的智能家居内容”。目前能看到的关键进展有三层：
+
+### 1. 超级小爱：从语音助手升级成系统级 Agent
+
+小米近年的方向不是只做“如果 A 就 B”的规则自动化，而是把小爱同学升级为更强的系统级助手：
+
+- 手机、平板、电视、音箱、车机等终端逐步接入大模型能力。
+- HyperOS / 澎湃 OS 上的“超级小爱”开始承担跨应用理解、问答、摘要、写作、图片处理、设备控制等任务。
+- DeepSeek-R1 等推理模型能力也被接入到系统助手场景，用于更复杂的推理、写作和问答。
+
+但这部分更偏“个人智能助手 / 系统 Agent”，不是专门针对家庭自动化的完整替代方案。
+
+### 2. Xiaomi Miloco：小米智能家居 AI 最值得关注的项目
+
+官方项目：<https://github.com/XiaoMi/xiaomi-miloco>
+
+小米在 2025 年开源了 **Xiaomi Miloco / Xiaomi Local Copilot**，这是目前最贴近“智能家居大模型化”的动作。
+
+官方 README 对它的定位是：
+
+```text
+以米家摄像机为视觉信息来源，以自研大模型为核心，打通全屋 IoT 设备。
+基于大模型的开发范式，让用户能够以自然语言定义家庭的各种需求和规则。
+```
+
+核心点：
+
+- **自然语言定义规则**：不再只靠手工 if-this-then-that，而是让用户用自然语言描述家庭需求。
+- **端侧大模型**：使用小米自研 `Xiaomi MiMo-VL-Miloco-7B`，把家庭任务拆成“规划 + 视觉理解”。
+- **摄像头作为感知入口**：用米家摄像头数据理解家庭场景事件。
+- **打通米家生态**：支持获取/执行米家设备和米家场景，也能发送米家通知。
+- **隐私方向**：强调端侧视频理解，减少家庭视觉数据上云。
+
+和传统米家规则的区别：
+
+| 传统米家自动化 | Xiaomi Miloco 方向 |
+|---|---|
+| 用户手动设置触发条件和动作 | 用户用自然语言描述需求 |
+| 主要依赖传感器状态 | 摄像头视觉 + 大模型理解场景 |
+| 规则固定，难处理模糊场景 | 模型可以做意图理解和场景推理 |
+| 适合简单联动 | 目标是复杂家庭需求/多设备协同 |
+
+重要限制：
+
+- 目前更像“未来探索 / 开发者项目”，不是普通用户在米家 App 里一键启用的成熟功能。
+- 依赖摄像头视觉场景，无摄像头或不愿摄像头参与的家庭收益有限。
+- 本地跑模型有硬件要求：官方 README 写到需要 x64、NVIDIA 30 系及以上显卡，显存最低 8GB、建议 12GB+；Windows 需要 WSL2；macOS 暂不支持。
+- 它目前不能简单理解成“买个小爱音箱就自动拥有家庭大模型”。
+
+### 3. Home Assistant 也在走本地 LLM / Assist 路线
+
+如果主子要的是“可控、可折腾、能把米家和大模型结合起来”，Home Assistant 反而是近期最实际的路线之一。
+
+可用方向：
+
+- HA 的 Assist 语音助手。
+- 接 Ollama / OpenAI / Anthropic / Gemini 等模型。
+- 本地模型理解自然语言，再调用 HA 里的设备和自动化。
+- 米家设备先通过 Xiaomi Home / Xiaomi Miot Auto 接进 HA，再让 HA 的 LLM/Assist 调用。
+
+链路可以是：
+
+```text
+米家设备 → Home Assistant → Assist / LLM Agent → 自动化 / Apple Home
+```
+
+这条路线对主子更现实，因为它不等小米把所有功能产品化；只要米家设备能进 HA，就能开始用模型做自然语言控制和自动化编排。
+
+### 4. 奴才判断
+
+小米确实已经在做“模型驱动智能家居”，最关键的是 **Xiaomi Miloco**，但现在还偏开发者和探索项目；普通家庭真正落地，短期还是建议：
+
+```text
+Home Assistant 接入米家 → 再接 HA Assist / 本地 LLM → 稳定设备桥到 Apple Home
+```
+
+后续如果小米把 Miloco 能力整合进米家 App / 小米中枢网关 / 小爱音箱，那才会从“规则驱动”真正进入“意图驱动”。
+
+---
+
 ## 2. 主流路线对比
 
 ### 路线 A：设备原生支持 HomeKit / Matter
@@ -503,5 +585,9 @@ Home Assistant + Xiaomi Miot Auto + 官方 Xiaomi Home 集成并行测试
 - HomeBridge Miot：<https://github.com/merdok/homebridge-miot>
 - Home Assistant HomeKit Bridge：<https://www.home-assistant.io/integrations/homekit/>
 - Home Assistant Matter：<https://www.home-assistant.io/integrations/matter/>
+- Xiaomi Miloco / Xiaomi Local Copilot：<https://github.com/XiaoMi/xiaomi-miloco>
+- Xiaomi MiMo-VL-Miloco 模型：<https://github.com/XiaoMi/xiaomi-mimo-vl-miloco>
+- Home Assistant 本地 AI / Assist 进展：<https://www.home-assistant.io/blog/2025/09/11/ai-in-home-assistant/>
+- Home Assistant Ollama 集成：<https://www.home-assistant.io/integrations/ollama/>
 - 少数派米家官方 HA 集成体验：<https://sspai.com/post/94916>
 - 蓝点网米家官方 HA + HomeKit 文章：<https://www.landiannews.com/archives/107117.html>
