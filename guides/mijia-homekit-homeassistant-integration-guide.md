@@ -98,6 +98,17 @@ Home Assistant（HA）是开源智能家居中枢，适合把米家、Apple Home
 - 本地跑模型有硬件要求：官方 README 写到需要 x64、NVIDIA 30 系及以上显卡，显存最低 8GB、建议 12GB+；Windows 需要 WSL2；macOS 暂不支持。
 - 它目前不能简单理解成“买个小爱音箱就自动拥有家庭大模型”。
 
+#### 主子的本机能不能跑 Xiaomi Miloco
+
+主子的当前机器是 **Mac mini / Apple M4 / 16GB 统一内存 / 10 核 Apple GPU / macOS 15.5**。按小米官方要求判断：
+
+- **不能直接跑完整 Xiaomi Miloco AI Engine**：官方 AI Engine 要求 x64 + NVIDIA 30 系及以上显卡 + CUDA + NVIDIA Container Toolkit；macOS 标注为暂不支持。
+- **Apple M4 的 GPU 不等于 NVIDIA CUDA 显卡**：Miloco 的 Docker GPU 路线走 CUDA，Apple Metal 不能直接替代。
+- **主服务可能能在 macOS Docker 上跑一部分**：官方环境文档提到 macOS 主服务和 Docker 网络桥接问题，但 AI Engine 仍然不支持 macOS，所以不能视为完整可用。
+- **单独体验模型有探索空间**：`Xiaomi MiMo-VL-Miloco-7B-GGUF` 是量化 GGUF 版本，理论上可尝试用支持 Metal 的 `llama.cpp` 类工具在 M4 上加载做离线测试；但这不等于完整 Miloco 智能家居系统，视频流、米家设备执行、规划模型联动都需要额外适配。
+
+结论：这台 M4 Mac mini **不适合作为 Miloco 完整部署机器**。如果要完整跑，优先准备一台 **Ubuntu / Windows WSL2 + NVIDIA RTX 3060 12GB、RTX 4060 Ti 16GB、RTX 4070 12GB 或更高** 的主机。
+
 ### 3. Home Assistant 也在走本地 LLM / Assist 路线
 
 如果主子要的是“可控、可折腾、能把米家和大模型结合起来”，Home Assistant 反而是近期最实际的路线之一。
