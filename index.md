@@ -3,6 +3,8 @@
 > 文档总索引。按目录分类，快速定位内容。
 > Last updated: 2026-06-06 | Total files: 46
 
+Quick links: [purpose.md](purpose.md) | [overview.md](overview.md) | [SCHEMA.md](SCHEMA.md) | [log.md](log.md)
+
 ## Guides - 教程指南
 
 - [2026-05-29-claude-wiki-operations](guides/2026-05-29-claude-wiki-operations.md)
@@ -65,4 +67,4 @@
 
 ## Scripts - 脚本工具
 
-- [gitlab_daily_report.py](scripts/gitlab_daily_report.py)
+- [gitlab_daily_report](scripts/gitlab_daily_report.py)

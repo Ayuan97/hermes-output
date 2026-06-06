@@ -8,12 +8,15 @@
 hermes-output/
 ├── README.md           # 仓库说明
 ├── SCHEMA.md           # 本文件：规范、约定
+├── purpose.md          # 仓库目的、研究范围
 ├── index.md            # 总索引（所有文档目录）
+├── overview.md         # 全局摘要（自动更新）
 ├── log.md              # 操作日志（append-only）
 ├── guides/             # 教程、操作指南、how-to
 ├── notes/              # 笔记、配置记录、调试过程
 ├── research/           # 调研报告（深度分析、技术选型）
 ├── reports/            # 定期报告（日报、周报、trending）
+├── synthesis/          # 跨主题综合分析
 ├── plans/              # 规划、路线图
 ├── scripts/            # 脚本文件
 ├── references/         # 常用资料、速查表
@@ -60,6 +63,7 @@ summary: 一句话摘要
 - `note` - 笔记、备忘
 - `research` - 调研报告
 - `report` - 定期报告
+- `synthesis` - 综合分析
 - `plan` - 规划
 - `reference` - 速查资料
 
@@ -90,6 +94,12 @@ summary: 一句话摘要
 - 有明确的调研目标
 - 包含结论和建议
 - 可引用外部资料
+
+### synthesis/
+- 跨多个调研主题的综合分析
+- 多源信息汇总
+- 对比研究、趋势分析
+- 需要引用多个 research/ 文档
 
 ### reports/
 - 定期生成的内容

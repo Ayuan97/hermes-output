@@ -19,3 +19,14 @@
 ## [2026-06-06] update | README.md
 - Updated directory structure to match new layout
 - Added references to SCHEMA.md and index.md
+
+## [2026-06-06] create | Add purpose.md and overview.md
+- Created purpose.md: defines repo goals, research scope, usage principles
+- Created overview.md: global summary with stats and recent updates
+- Created synthesis/ directory for cross-topic analysis
+
+## [2026-06-06] update | Enhance SCHEMA.md and index.md
+- Added purpose.md and overview.md to SCHEMA.md directory structure
+- Added synthesis/ directory rules to SCHEMA.md
+- Added synthesis tag to Tag Taxonomy
+- Updated index.md with quick links to new files
