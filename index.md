@@ -1,70 +1,70 @@
-# Output Index
+# 文档索引
 
 > 文档总索引。按目录分类，快速定位内容。
-> Last updated: 2026-06-06 | Total files: 46
+> 最后更新：2026-06-06 | 文档总数：46
 
-Quick links: [purpose.md](purpose.md) | [overview.md](overview.md) | [SCHEMA.md](SCHEMA.md) | [log.md](log.md)
+快速链接：[仓库目的](purpose.md) | [全局概览](overview.md) | [命名规范](SCHEMA.md) | [操作日志](log.md)
 
-## Guides - 教程指南
+## 教程（教程指南）
 
-- [2026-05-29-claude-wiki-operations](guides/2026-05-29-claude-wiki-operations.md)
-- [2026-05-29-codex-cli-gpt-5-5-fix](guides/2026-05-29-codex-cli-gpt-5-5-fix.md)
-- [2026-05-29-git-ssh-dns-vpn-fix](guides/2026-05-29-git-ssh-dns-vpn-fix.md)
-- [2026-05-31-gold-price-script-ssl-weekend-fix](guides/2026-05-31-gold-price-script-ssl-weekend-fix.md)
-- [2026-06-04-oa-usage-guide](guides/2026-06-04-oa-usage-guide.md)
-- [apple-turkey-id](guides/apple-turkey-id.md)
-- [comfyui-usage-guide](guides/comfyui-usage-guide.md)
-- [hermes-claude-codex-subagents-2026-05-28](guides/hermes-claude-codex-subagents-2026-05-28.md)
-- [mijia-homekit-homeassistant-integration-guide](guides/mijia-homekit-homeassistant-integration-guide.md)
-- [opencli-browser-bridge-guide](guides/opencli-browser-bridge-guide.md)
+- [2026-05-29-Claude维基操作](教程/2026-05-29-Claude维基操作.md)
+- [2026-05-29-Codex-CLI-GPT5.5修复](教程/2026-05-29-Codex-CLI-GPT5.5修复.md)
+- [2026-05-29-Git-SSH-DNS-VPN修复](教程/2026-05-29-Git-SSH-DNS-VPN修复.md)
+- [2026-05-31-金价脚本SSL周末修复](教程/2026-05-31-金价脚本SSL周末修复.md)
+- [2026-06-04-OA系统使用指南](教程/2026-06-04-OA系统使用指南.md)
+- [Apple土耳其ID](教程/Apple土耳其ID.md)
+- [ComfyUI使用指南](教程/ComfyUI使用指南.md)
+- [Hermes-Claude-Codex子代理-2026-05-28](教程/Hermes-Claude-Codex子代理-2026-05-28.md)
+- [OpenCLI浏览器桥接指南](教程/OpenCLI浏览器桥接指南.md)
+- [米家-HomeKit-HomeAssistant集成指南](教程/米家-HomeKit-HomeAssistant集成指南.md)
 
-## Notes - 笔记备忘
+## 笔记（笔记备忘）
 
-- [2026-05-29-hermes-wiki-integration](notes/2026-05-29-hermes-wiki-integration.md)
-- [2026-05-31-gitlab-daily-report-prompt-optimization](notes/2026-05-31-gitlab-daily-report-prompt-optimization.md)
-- [2026-05-31-hermes-self-optimizing-skills](notes/2026-05-31-hermes-self-optimizing-skills.md)
-- [2026-06-02-hermes-model-switch-troubleshooting](notes/2026-06-02-hermes-model-switch-troubleshooting.md)
-- [2026-06-02-turkish-apple-id-blockers](notes/2026-06-02-turkish-apple-id-blockers.md)
-- [2026-06-04-oa-daily-report-setup](notes/2026-06-04-oa-daily-report-setup.md)
-- [2026-06-05-hermes-toolchain-cleanup](notes/2026-06-05-hermes-toolchain-cleanup.md)
-- [2026-06-05-justus-image-service-setup](notes/2026-06-05-justus-image-service-setup.md)
-- [2026-06-05-vision-auxiliary-model-setup](notes/2026-06-05-vision-auxiliary-model-setup.md)
-- [gitlab-daily-report-script-evolution](notes/gitlab-daily-report-script-evolution.md)
-- [hermes-config-and-skill-pruning-2026-05-28](notes/hermes-config-and-skill-pruning-2026-05-28.md)
-- [hermes-multi-agent-architecture](notes/hermes-multi-agent-architecture.md)
+- [2026-05-29-Hermes维基集成](笔记/2026-05-29-Hermes维基集成.md)
+- [2026-05-31-GitLab日报提示词优化](笔记/2026-05-31-GitLab日报提示词优化.md)
+- [2026-05-31-Hermes自我优化技能](笔记/2026-05-31-Hermes自我优化技能.md)
+- [2026-06-02-Hermes模型切换排查](笔记/2026-06-02-Hermes模型切换排查.md)
+- [2026-06-02-土耳其AppleID障碍](笔记/2026-06-02-土耳其AppleID障碍.md)
+- [2026-06-04-OA日报配置](笔记/2026-06-04-OA日报配置.md)
+- [2026-06-05-Hermes工具链清理](笔记/2026-06-05-Hermes工具链清理.md)
+- [2026-06-05-Justus图片服务配置](笔记/2026-06-05-Justus图片服务配置.md)
+- [2026-06-05-视觉辅助模型配置](笔记/2026-06-05-视觉辅助模型配置.md)
+- [GitLab日报脚本演进](笔记/GitLab日报脚本演进.md)
+- [Hermes多代理架构](笔记/Hermes多代理架构.md)
+- [Hermes配置与技能精简-2026-05-28](笔记/Hermes配置与技能精简-2026-05-28.md)
 
-## Research - 调研报告
+## 调研（调研报告）
 
-- [2026-05-27-hermes-agent-usage-patterns](research/2026-05-27-hermes-agent-usage-patterns.md)
-- [2026-05-29-claude-opus-4-8-release](research/2026-05-29-claude-opus-4-8-release.md)
-- [2026-05-31-tsinghua-skill-evolution-research](research/2026-05-31-tsinghua-skill-evolution-research.md)
-- [2026-06-01-weekly-ai-tools-video-topics](research/2026-06-01-weekly-ai-tools-video-topics.md)
-- [2026-06-04-soho-外贸全流程](research/2026-06-04-soho-外贸全流程.md)
-- [2026-06-04-soho-外贸调研报告](research/2026-06-04-soho-外贸调研报告.md)
-- [2026-06-05-codex-desktop-control-research](research/2026-06-05-codex-desktop-control-research.md)
-- [2026-06-05-developer-communities-overview](research/2026-06-05-developer-communities-overview.md)
-- [2026-06-05-hermes-config-ui-research](research/2026-06-05-hermes-config-ui-research.md)
-- [2026-06-05-linux-do-community-research](research/2026-06-05-linux-do-community-research.md)
-- [hermes-skills-community-research-2026-05-28](research/hermes-skills-community-research-2026-05-28.md)
-- [跨境电商独立站入门全景调研-2026-05](research/跨境电商独立站入门全景调研-2026-05.md)
-- [长葛外贸选品与物流调研-notes](research/长葛外贸选品与物流调研-notes.md)
-- [长葛外贸选品与物流调研](research/长葛外贸选品与物流调研.md)
+- [2026-05-27-Hermes代理使用模式](调研/2026-05-27-Hermes代理使用模式.md)
+- [2026-05-29-Claude-Opus-4.8发布](调研/2026-05-29-Claude-Opus-4.8发布.md)
+- [2026-05-31-清华技能演进研究](调研/2026-05-31-清华技能演进研究.md)
+- [2026-06-01-每周AI工具视频主题](调研/2026-06-01-每周AI工具视频主题.md)
+- [2026-06-04-soho-外贸全流程](调研/2026-06-04-soho-外贸全流程.md)
+- [2026-06-04-soho-外贸调研报告](调研/2026-06-04-soho-外贸调研报告.md)
+- [2026-06-05-Codex桌面控制研究](调研/2026-06-05-Codex桌面控制研究.md)
+- [2026-06-05-Hermes配置界面研究](调研/2026-06-05-Hermes配置界面研究.md)
+- [2026-06-05-Linux.do社区研究](调研/2026-06-05-Linux.do社区研究.md)
+- [2026-06-05-开发者社区概览](调研/2026-06-05-开发者社区概览.md)
+- [Hermes技能社区研究-2026-05-28](调研/Hermes技能社区研究-2026-05-28.md)
+- [跨境电商独立站入门全景调研-2026-05](调研/跨境电商独立站入门全景调研-2026-05.md)
+- [长葛外贸选品与物流调研-笔记](调研/长葛外贸选品与物流调研-笔记.md)
+- [长葛外贸选品与物流调研](调研/长葛外贸选品与物流调研.md)
 
-## Reports - 定期报告
+## 报告（定期报告）
 
-- [2026-05-27-company-gitlab-daily-report](reports/2026-05-27-company-gitlab-daily-report.md)
-- [2026-05-31-ai-morning-briefing](reports/2026-05-31-ai-morning-briefing.md)
-- [2026-05-31-company-gitlab-daily-report](reports/2026-05-31-company-gitlab-daily-report.md)
-- [2026-06-01-company-gitlab-daily-report](reports/2026-06-01-company-gitlab-daily-report.md)
-- [2026-06-01](reports/2026-06-01.md)
-- [2026-06-02-ai-morning-briefing](reports/2026-06-02-ai-morning-briefing.md)
-- [2026-06-04-github-trending](reports/2026-06-04-github-trending.md)
-- [2026-06-06-github-trending](reports/2026-06-06-github-trending.md)
+- [2026-05-27-公司GitLab日报](报告/2026-05-27-公司GitLab日报.md)
+- [2026-05-31-AI早间简报](报告/2026-05-31-AI早间简报.md)
+- [2026-05-31-公司GitLab日报](报告/2026-05-31-公司GitLab日报.md)
+- [2026-06-01-公司GitLab日报](报告/2026-06-01-公司GitLab日报.md)
+- [2026-06-01-日报](报告/2026-06-01-日报.md)
+- [2026-06-02-AI早间简报](报告/2026-06-02-AI早间简报.md)
+- [2026-06-04-GitHub趋势](报告/2026-06-04-GitHub趋势.md)
+- [2026-06-06-GitHub趋势](报告/2026-06-06-GitHub趋势.md)
 
-## Plans - 规划路线
+## 规划（规划路线）
 
-- [roadmap](plans/roadmap.md)
+- [路线图](规划/路线图.md)
 
-## Scripts - 脚本工具
+## 脚本（脚本工具）
 
-- [gitlab_daily_report](scripts/gitlab_daily_report.py)
+- [GitLab日报生成](脚本/GitLab日报生成.py)

@@ -1,8 +1,8 @@
-# Output Schema
+# 输出规范
 
 > 仓库规范与命名约定。所有文档遵循此规范。
 
-## Directory Structure
+## 目录结构
 
 ```
 hermes-output/
@@ -12,33 +12,34 @@ hermes-output/
 ├── index.md            # 总索引（所有文档目录）
 ├── overview.md         # 全局摘要（自动更新）
 ├── log.md              # 操作日志（append-only）
-├── guides/             # 教程、操作指南、how-to
-├── notes/              # 笔记、配置记录、调试过程
-├── research/           # 调研报告（深度分析、技术选型）
-├── reports/            # 定期报告（日报、周报、trending）
-├── synthesis/          # 跨主题综合分析
-├── plans/              # 规划、路线图
-├── scripts/            # 脚本文件
-├── references/         # 常用资料、速查表
-└── archive/            # 历史存档（过期内容）
+├── 教程/               # 教程、操作指南、how-to
+├── 笔记/               # 笔记、配置记录、调试过程
+├── 调研/               # 调研报告（深度分析、技术选型）
+├── 报告/               # 定期报告（日报、周报、trending）
+├── 综合/               # 跨主题综合分析
+├── 规划/               # 规划、路线图
+├── 脚本/               # 脚本文件
+├── 参考/               # 常用资料、速查表
+└── 归档/               # 历史存档（过期内容）
 ```
 
-## Naming Conventions
+## 命名规范
 
-### File Names
-- 格式：`YYYY-MM-DD-kebab-case-title.md`
+### 文件名
+- 格式：`YYYY-MM-DD-中文标题.md`
 - 日期前缀：所有带时间属性的文档必须带日期
-- 无日期文档：纯知识性内容可不带日期（如 `codex-cli-guide.md`）
-- 语言：文件名用英文，内容可用中文
-- 禁止：空格、中文文件名、特殊字符
+- 无日期文档：纯知识性内容可不带日期（如 `Apple土耳其ID.md`）
+- 语言：文件名用中文，内容用中文
+- 专有名词保留英文：Hermes、GitLab、Claude、Codex 等
+- 禁止：空格、特殊字符
 
-### Examples
+### 示例
 ```
-✅ 2026-06-05-github-trending.md
-✅ codex-cli-guide.md
-✅ 2026-05-29-git-ssh-dns-vpn-fix.md
+✅ 2026-06-06-GitHub趋势.md
+✅ Apple土耳其ID.md
+✅ 2026-05-29-Git-SSH-DNS-VPN修复.md
 ❌ GitHub Trending 日报.md
-❌ 2026/06/05-report.md
+❌ 2026/06/05-报告.md
 ```
 
 ## Frontmatter
@@ -50,24 +51,24 @@ hermes-output/
 title: 文档标题
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-type: guide | note | research | report | plan | reference
-tags: [tag1, tag2]
+type: 教程 | 笔记 | 调研 | 报告 | 综合 | 规划 | 参考
+tags: [标签1, 标签2]
 summary: 一句话摘要
 ---
 ```
 
-## Tag Taxonomy
+## 标签分类
 
-### Content Type
-- `guide` - 教程、操作指南
-- `note` - 笔记、备忘
-- `research` - 调研报告
-- `report` - 定期报告
-- `synthesis` - 综合分析
-- `plan` - 规划
-- `reference` - 速查资料
+### 内容类型
+- `教程` - 教程、操作指南
+- `笔记` - 笔记、备忘
+- `调研` - 调研报告
+- `报告` - 定期报告
+- `综合` - 综合分析
+- `规划` - 规划
+- `参考` - 速查资料
 
-### Domain Tags
+### 领域标签
 - `hermes` - Hermes Agent 相关
 - `gitlab` - GitLab / CI/CD
 - `github` - GitHub 相关
@@ -78,65 +79,65 @@ summary: 一句话摘要
 - `config` - 配置记录
 - `debug` - 调试记录
 
-## Directory Rules
+## 目录规则
 
-### guides/
+### 教程/
 - 完整的操作步骤
 - 可复现的流程
 - 包含验证方法
 
-### notes/
+### 笔记/
 - 配置变更记录
 - 问题排查过程
 - 不要求完整性，重在记录
 
-### research/
+### 调研/
 - 有明确的调研目标
 - 包含结论和建议
 - 可引用外部资料
 
-### synthesis/
+### 综合/
 - 跨多个调研主题的综合分析
 - 多源信息汇总
 - 对比研究、趋势分析
-- 需要引用多个 research/ 文档
+- 需要引用多个调研/ 文档
 
-### reports/
+### 报告/
 - 定期生成的内容
 - 格式相对固定
 - 时效性较强
 
-### plans/
+### 规划/
 - 未来规划
 - 路线图
 - 里程碑
 
-### scripts/
+### 脚本/
 - 可执行脚本
 - 自动化工具
 - 需附带使用说明
 
-### references/
+### 参考/
 - API 文档速查
 - 命令参考
 - 配置模板
 
-### archive/
+### 归档/
 - 过期内容
 - 已完成的项目文档
 - 不再维护的资料
 
-## Operations
+## 操作流程
 
-### Adding New Content
+### 添加新内容
 1. 确定内容类型 → 选择目录
 2. 按命名规范命名文件
 3. 添加 frontmatter
 4. 更新 `index.md`
 5. 追加 `log.md`
 
-### Archiving
-1. 移动到 `archive/`
-2. 保留原始路径（如 `archive/guides/old-guide.md`）
-3. 从 `index.md` 移除或标记 archived
+### 归档
+1. 移动到 `归档/`
+2. 保留原始路径（如 `归档/教程/旧指南.md`）
+3. 从 `index.md` 移除或标记已归档
 4. 记录到 `log.md`
