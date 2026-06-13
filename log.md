@@ -1,8 +1,54 @@
-# 操作日志
+# Output Log
 
-> 操作日志。只追加，不修改。
-> 格式：`## [YYYY-MM-DD] 操作 | 主题`
-> 操作类型：创建、更新、归档、移动、重命名、检查
+> 操作日志。Append-only。
+> Format: `## [YYYY-MM-DD] action | subject`
+> Actions: create, update, ingest, archive, move, lint
+
+## [2026-06-13] update | 索引和概览同步
+- 更新 index.md：补录 summaries/ 目录下 6/3~6/12 的全部日报和 trending 报告（共 19 篇），文档总数 46→65
+- 更新 overview.md：同步统计、最近更新列表、添加 summaries/ 遗留说明
+- 更新 log.md：补录 6/6 以来的操作记录
+
+## [2026-06-13] archive | GitLab 日报 2026-06-12
+- 定时任务自动生成并推送：文档大扫除 + 任务中心重构 + 视频水印功能上线
+- 7 人提交，5 个项目活跃，3 个 MR 合入
+- 已保存至 summaries/2026-06-12.md
+
+## [2026-06-12] create | GitHub Trending 日报 2026-06-12
+- AI Agent 生态大爆发：agent-skills、apple/container、agency-agents 等
+- 已保存至 summaries/2026-06-12-github-trending.md
+
+## [2026-06-12] archive | GitLab 日报 2026-06-11
+- 补提交：4 个项目活跃，跨仓文档清理 + 功能开发
+- 已保存至 summaries/2026-06-11.md
+
+## [2026-06-11] create | GitHub Trending 日报 2026-06-11
+- 已保存至 summaries/2026-06-11-github-trending.md
+
+## [2026-06-11] archive | GitLab 日报 2026-06-10
+- 已保存至 summaries/2026-06-10.md
+
+## [2026-06-10] create | GitHub Trending 日报 2026-06-10
+- 已保存至 summaries/2026-06-10-github-trending.md
+
+## [2026-06-10] create | 微信群机器人调研
+- 已保存至 summaries/2026-06-09-wechat-bot-research.md
+
+## [2026-06-11] archive | GitLab 日报批量补提交
+- 2026-06-03 ~ 2026-06-09 日报批量推送
+- 已保存至 summaries/ 对应日期文件
+
+## [2026-06-09] create | GitHub Trending 日报 2026-06-09
+- 已保存至 summaries/2026-06-09-github-trending.md
+
+## [2026-06-09] create | VPS 静态 IP 调研
+- 已保存至 summaries/2026-06-08-vps-static-ip-research.md
+
+## [2026-06-08] create | GitHub Trending 日报 2026-06-08
+- 已保存至 summaries/2026-06-08-github-trending.md
+
+## [2026-06-08] create | 每周 AI 工具视频主题
+- 已保存至 summaries/2026-06-08-weekly-ai-tools-video-topics.md
 
 ## [2026-06-06] 创建 | 仓库重构
 - 创建 SCHEMA.md：命名规范、目录规则、标签分类

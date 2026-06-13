@@ -1,7 +1,7 @@
 # 文档索引
 
 > 文档总索引。按目录分类，快速定位内容。
-> 最后更新：2026-06-06 | 文档总数：46
+> 最后更新：2026-06-13 | 文档总数：65
 
 快速链接：[仓库目的](purpose.md) | [全局概览](overview.md) | [命名规范](SCHEMA.md) | [操作日志](log.md)
 
@@ -45,6 +45,9 @@
 - [2026-06-05-Hermes配置界面研究](调研/2026-06-05-Hermes配置界面研究.md)
 - [2026-06-05-Linux.do社区研究](调研/2026-06-05-Linux.do社区研究.md)
 - [2026-06-05-开发者社区概览](调研/2026-06-05-开发者社区概览.md)
+- [2026-06-08-VPS静态IP调研](summaries/2026-06-08-vps-static-ip-research.md)
+- [2026-06-08-每周AI工具视频主题](summaries/2026-06-08-weekly-ai-tools-video-topics.md)
+- [2026-06-09-微信群机器人调研](summaries/2026-06-09-wechat-bot-research.md)
 - [Hermes技能社区研究-2026-05-28](调研/Hermes技能社区研究-2026-05-28.md)
 - [跨境电商独立站入门全景调研-2026-05](调研/跨境电商独立站入门全景调研-2026-05.md)
 - [长葛外贸选品与物流调研-笔记](调研/长葛外贸选品与物流调研-笔记.md)
@@ -60,6 +63,21 @@
 - [2026-06-02-AI早间简报](报告/2026-06-02-AI早间简报.md)
 - [2026-06-04-GitHub趋势](报告/2026-06-04-GitHub趋势.md)
 - [2026-06-06-GitHub趋势](报告/2026-06-06-GitHub趋势.md)
+- [2026-06-07-GitHub趋势](报告/2026-06-07-GitHub趋势.md)
+- [2026-06-03-GitLab日报](summaries/2026-06-03.md)
+- [2026-06-04-GitLab日报](summaries/2026-06-04.md)
+- [2026-06-05-GitLab日报](summaries/2026-06-05.md)
+- [2026-06-06-GitLab日报](summaries/2026-06-06.md)
+- [2026-06-08-GitHub趋势](summaries/2026-06-08-github-trending.md)
+- [2026-06-08-GitLab日报](summaries/2026-06-08.md)
+- [2026-06-09-GitHub趋势](summaries/2026-06-09-github-trending.md)
+- [2026-06-09-GitLab日报](summaries/2026-06-09.md)
+- [2026-06-10-GitHub趋势](summaries/2026-06-10-github-trending.md)
+- [2026-06-10-GitLab日报](summaries/2026-06-10.md)
+- [2026-06-11-GitHub趋势](summaries/2026-06-11-github-trending.md)
+- [2026-06-11-GitLab日报](summaries/2026-06-11.md)
+- [2026-06-12-GitHub趋势](summaries/2026-06-12-github-trending.md)
+- [2026-06-12-GitLab日报](summaries/2026-06-12.md)
 
 ## 规划（规划路线）
 
