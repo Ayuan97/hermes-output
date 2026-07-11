@@ -1,155 +1,131 @@
-# 🔥 GitHub 趋势速览 — 2026年7月10日
+# 🔥 GitHub 趋势速览 — 2026-07-10
 
 ## 一句话总览
 
-**AI Agent 生态大爆发。** 今天 GitHub 日榜和周榜几乎被 Agent 工具链吞没——从给 Agent 喂技能（agent-skills）、配沙箱（CubeSandbox）、写设计稿（awesome-design-md）、到多 Agent 编排（orca、herdr），整个开发工具链正在围绕"如何让 AI Agent 更好地干活"重构。Claude Code + Codex 生态是绝对主战场。
+**今天的 GitHub Trending 被 "AI Agent Skills" 彻底屠榜了。** 日榜前 7 名里有 5 个都是给 AI 编程 Agent（Claude Code / Codex / Cursor 等）提供"技能包"的仓库，周榜更是被各种 Agent 工具、MCP Server、token 优化方案塞满。这不是一个两个项目的热度，而是一个完整的生态在爆发。
 
 ---
 
-## 🚀 爆款项目 TOP 5
+## 🚀 爆款项目 TOP 5（按日增 star 排序）
 
-### 1. MadsLorentzen/ai-job-search
-🔗 https://github.com/MadsLorentzen/ai-job-search
-⭐ +3,716/天 | 周榜 +13,847 | TypeScript
+### 1. mattpocock/skills — ⭐+1,712/day
+🔗 https://github.com/mattpocock/skills
 
-**干什么：** 基于 Claude Code 的 AI 求职框架。Fork 后填入个人资料，Claude 自动评估岗位、定制简历、写求职信、模拟面试。
+**干什么的：** Matt Pocock（TypeScript 圈知名博主）把自己 `.claude` 目录里的 Agent Skills 公开了，Shell 脚本为主，直接给 Claude Code 用。
 
-**为什么火：** 把求职这个高频痛点场景完全 Agent 化了。不是简单的"AI 帮你改简历"，而是完整的求职工作流——岗位匹配度评估、个性化 CV 生成、面试准备一站式搞定。日增 3700+ star 说明戳中了大量技术人的痛点。
+**为什么火：** "Skills" 是 2026 年 AI 编程的新范式——你不再每次从零 prompt 开始，而是把工程最佳实践打包成可复用的技能文件。Matt 带头开源，引发了 FOMO 式传播。
 
-**对主子的价值：** 值得 clone 下来研究其 Claude Code 技能编排方式，Agent 工作流设计思路可以借鉴。也是不错的视频选题——"用 AI 帮你找工作"天然有流量。
-
----
-
-### 2. addyosmani/agent-skills
-🔗 https://github.com/addyosmani/agent-skills
-⭐ +2,554/天 | JavaScript
-
-**干什么：** 给 AI 编程 Agent 提供生产级工程技能的集合。可以理解为 Agent 的"技能树"——教 Agent 怎么按最佳实践写代码。
-
-**为什么火：** Addy Osmani（Google Chrome 团队大佬）背书，解决了 Agent 写代码质量差的核心问题。不是 prompt engineering，而是结构化的技能文件，让 Agent 在特定任务上达到高级工程师水平。
-
-**对主子的价值：** 直接能用。把这些 skills 集成到日常 Agent 工作流里，代码质量会明显提升。也值得研究 skill 文件的写法来给自己的 Agent 定制技能。
+**对主子的价值：** 直接 clone 下来挑适合自己项目的 skills 用，能大幅提升 Claude Code 的代码质量。也值得研究他怎么组织 skills 结构的。
 
 ---
 
-### 3. iOfficeAI/OfficeCLI
+### 2. iOfficeAI/OfficeCLI — ⭐+1,224/day（周 +5,789）
 🔗 https://github.com/iOfficeAI/OfficeCLI
-⭐ +1,929/天 | C#
 
-**干什么：** 专为 AI Agent 打造的 Office 套件。单二进制文件，不装 Office 就能读写 Word/Excel/PPT。开源免费。
+**干什么的：** 专为 AI Agent 打造的 Office 套件 CLI 工具。一个二进制文件就能读写 Word/Excel/PPT，不需要安装 Office。
 
-**为什么火：** Agent 处理 Office 文件一直是个大坑——要么依赖 Office 安装，要么用各种不靠谱的库。这个工具把整个 Office 操作封装成 Agent 友好的 CLI，直接解决了"让 AI 处理文档"的最后一公里。
+**为什么火：** 解决了 AI Agent 处理办公文档的大痛点——以前要依赖 python-docx、openpyxl 等一堆库，现在 Agent 一条命令就能搞定。C# 写的，跨平台。
 
-**对主子的价值：** 实用工具，收藏备用。任何需要 Agent 批量处理文档的场景都能用上。
-
----
-
-### 4. VoltAgent/awesome-design-md
-🔗 https://github.com/VoltAgent/awesome-design-md
-⭐ +1,391/天
-
-**干什么：** 收集各大品牌设计系统的 DESIGN.md 文件。丢一个到你的项目里，编码 Agent 就能生成风格一致的 UI。
-
-**为什么火：** 巧妙地把设计系统"翻译"成了 Agent 能理解的结构化文档。解决了 AI 生成 UI 风格不统一的痛点——给 Agent 一份设计规范，它就知道按钮该长什么样、配色该怎么用。
-
-**对主子的价值：** 如果主子有前端项目，直接丢一个 DESIGN.md 进去让 Agent 生成 UI，效果会比裸跑好很多。
+**对主子的价值：** 如果主子有任何自动化处理 Office 文档的需求，这个工具可以直接集成到工作流里。Agent + 文档自动化 = 效率炸弹。
 
 ---
 
-### 5. asgeirtj/system_prompts_leaks
-🔗 https://github.com/asgeirtj/system_prompts_leaks
-⭐ +1,125/天 | 周榜 +7,149 | JavaScript
+### 3. addyosmani/agent-skills — ⭐+1,116/day（周 +7,944）
+🔗 https://github.com/addyosmani/agent-skills
 
-**干什么：** 从各大 AI 产品提取的系统提示词合集——Anthropic Claude 全家桶、OpenAI ChatGPT/Codex、Google Gemini、xAI Grok、Cursor、Copilot 等。持续更新。
+**干什么的：** Google Chrome 团队大佬 Addy Osmani 出品的 "production-grade" 工程技能包，面向 AI 编程 Agent。
 
-**为什么火：** 系统提示词是 AI 产品的核心秘密，大家天然好奇。而且这些泄露对做 AI 产品的人来说是宝贵的参考资料——看看顶级产品怎么设计 prompt 的。
+**为什么火：** Addy 自带流量 + 内容确实硬核（性能优化、架构设计、代码审查等 skill），和 Matt Pocock 的形成了互补——一个是实战派，一个是工程派。
 
-**对主子的价值：** 做 AI 相关内容时的绝佳素材。可以分析各家的 prompt 策略，也可以作为视频选题——"揭秘 ChatGPT/Claude 的系统提示词"。
+**对主子的价值：** 和 #1 一起看，把两家的高质量 skills 合并到自己的 Agent 配置里，等于白嫖了两个顶级工程师的经验。
+
+---
+
+### 4. obra/superpowers — ⭐+1,013/day
+🔗 https://github.com/obra/superpowers
+
+**干什么的：** 一个完整的 Agent 技能框架 + 软件开发方法论，不只是 skills 集合，还定义了"怎么用 Agent 写软件"的流程。
+
+**为什么火：** 它不只是一堆 prompt，而是提出了一个方法论——怎么让 Agent 像高级工程师一样思考、分解任务、执行。Shell 脚本为主，轻量好改。
+
+**对主子的价值：** 如果主子想系统性地用 Agent 做项目，这个值得深读。方法论 + 实践框架一步到位。
+
+---
+
+### 5. TencentCloud/CubeSandbox — ⭐+291/day（周 +2,514）
+🔗 https://github.com/TencentCloud/CubeSandbox
+
+**干什么的：** 腾讯出品的 AI Agent 安全沙箱。让 Agent 执行代码时有一个隔离环境，即时启动、并发安全、资源受限。
+
+**为什么火：** Agent 越来越能干，但安全问题也越来越大。这个沙箱让 Agent 可以大胆执行代码而不用担心搞坏宿主系统。Rust 写的，性能很好。
+
+**对主子的价值：** 如果主子在用 Agent 跑各种实验/测试，这个沙箱能提供一个安全边界。也可以看看腾讯在 Agent 基础设施上的思路。
 
 ---
 
 ## 📈 技术趋势洞察
 
-### 🔴 AI Agent 基础设施层（爆发中）
-今天最突出的信号：**Agent 工具链正在从"能用"走向"好用"**。具体表现：
-- **技能系统**：agent-skills（教 Agent 怎么写代码）、dotnet/skills（.NET 专项技能）、SkillOpt（自动优化 Agent 技能）
-- **沙箱/安全**：TencentCloud/CubeSandbox（Agent 专用沙箱）、pentagi（Agent 做渗透测试）
-- **设计系统**：awesome-design-md + facebook/astryx = Agent 生成 UI 有了标准化方案
-- **编排层**：orca（多 Agent 并行 ADE）、herdr（终端 Agent 多路复用）、alibaba/page-agent（网页内 GUI Agent）
+### 🔥 正在爆发的方向
 
-### 🟡 Claude Code / Codex 生态（主战场）
-Claude Code 和 Codex 的插件生态在快速膨胀：
-- codex-plugin-cc（Codex 调用 Claude Code 审查代码）
-- claude-video（让 Claude 看视频）
-- DesktopCommanderMCP（给 Claude 终端控制权）
-- ai-job-search、ai-berkshire 等垂直应用
+1. **Agent Skills 生态** — 这是今天最大的信号。不是 Agent 本身在火了，而是"怎么让 Agent 更好用"的基础设施在爆发。Skills、MCP Server、Agent Memory、Agent Sandbox 都在涨。这就像 2015 年的 npm 生态——围绕核心工具的工具链在快速生长。
 
-### 🟢 语音/视频 AI（新热点）
-- jamiepine/voicebox（+1,146/天）：开源 AI 语音工作室，克隆/转录/创作
-- kyutai-labs/pocket-tts：CPU 就能跑的 TTS
-- huggingface/speech-to-speech：本地语音 Agent
-- browser-use/video-use：用编程 Agent 编辑视频
+2. **Token 经济学** — Caveman（周 +5,348）用"穴居人语法"砍掉 65% token，OmniRoute（周 +4,268）做 AI 网关聚合 231 个供应商。说明大家开始认真算 Agent 的使用成本了。
 
-### 🔵 安全 + AI
-- usestrix/strix（周榜 +8,370）：开源 AI 渗透测试
-- vxcontrol/pentagi（+535/天）：全自主渗透测试 Agent
-- 安全领域正在成为 AI Agent 的重要应用场景
+3. **AI 安全/治理** — 微软出了 Agent Governance Toolkit（Python 榜 #7），腾讯出了 CubeSandbox，NVIDIA 出了 OpenShell。大厂在补 Agent 的安全短板。
 
-### 语言热度
-- **TypeScript** 依然是 Agent 工具链的主力语言
-- **Rust** 在 Agent 基础设施层（沙箱、会议工具、WiFi 感知）表现抢眼
-- **Python** 稳定输出 AI 工具和爬虫类项目
-- **Go** 在安全工具和 MCP 服务端方面有一席之地
+4. **Rust 在 Agent 基础设施中的地位** — Bun、CubeSandbox、OpenShell、Herdr、Meetily……Agent 生态的底层组件大量用 Rust。性能敏感的工具层 = Rust，这个趋势在加固。
+
+### 📊 语言/框架热度
+
+- **C++ 异常活跃** — 日榜出现 5 个 C++ 项目（abseil、yaml-cpp、Catch2、asio、meshoptimizer），这很反常，可能是某个 C++ 大会或版本发布带动的。
+- **Go 持续稳健** — Tailscale、Terraform、Headscale 稳定上榜，DevOps/基础设施领域 Go 还是王者。
+- **Python** — AI/ML 方向依然主导，但今天的 Python 榜也被 Agent Skills 和 Agent 治理工具入侵了。
 
 ---
 
 ## 💡 值得深挖 TOP 3
 
-### 1. Graphify-Labs/graphify ⭐+909/天
-🔗 https://github.com/Graphify-Labs/graphify
+### 1. 🏆 JuliusBrussee/caveman（周 +5,348）
+🔗 https://github.com/JuliusBrussee/caveman
 
-把任意代码/文档/数据库变成可查询的知识图谱，支持 Claude Code、Codex、Cursor 等。
+**理由：** 用"穴居人语法"压缩 prompt 省 65% token 这个思路太骚了。省钱 + 提速，而且原理简单，容易做视频讲清楚。
+**建议：** Clone 下来跑一下看看实际省多少，做个对比测试。视频选题 +1。
 
-**理由：** 知识图谱 + Agent 的结合非常有想象力。如果能让 Agent 理解整个项目的代码图谱，上下文管理问题就解决了一大半。值得 clone 试试，看看对大型项目的实际效果。
-
-### 2. Zackriya-Solutions/meetily 周榜 +8,885
+### 2. 🏆 Zackriya-Solutions/meetily（周 +8,795 霸榜第一）
 🔗 https://github.com/Zackriya-Solutions/meetily
 
-本地优先的 AI 会议助手：Rust 写的 Whisper 转录快 4 倍，说话人分离，Ollama 总结。100% 本地处理，零云端依赖。
+**理由：** 开源 AI 会议助手，Rust 写的，100% 本地处理，支持实时转录 + 摘要。周增 8,795 star 是绝对王者。
+**建议：** 直接下载试试，如果效果好的话可以替代付费的 Otter.ai/Fireflies。日常开会神器。
 
-**理由：** 会议记录是刚需，本地处理解决了隐私焦虑。Rust + Parakeet 的性能亮点值得研究。可以直接用，也可以拆解学习其 Rust 架构。
+### 3. 🏆 huggingface/speech-to-speech（周 +811）
+🔗 https://github.com/huggingface/speech-to-speech
 
-### 3. microsoft/SkillOpt ⭐+276/天
-🔗 https://github.com/microsoft/SkillOpt
-
-文本空间优化器，通过轨迹驱动编辑自动训练 Agent 技能，输出可部署的 `best_skill.md`。
-
-**理由：** 微软出品，解决的是"怎么自动发现和优化 Agent 技能"这个元问题。如果好用，意味着 Agent 可以自我进化——这比手工写技能文件高了一个维度。
+**理由：** HuggingFace 官方出品的本地语音 Agent 框架，开源模型驱动。语音交互是下一个 Agent 入口。
+**建议：** 值得跑个 demo 看看延迟和效果，评估是否能整合到主子的项目里。
 
 ---
 
-## 📅 周榜亮点
+## 📅 周榜亮点（与日榜差异）
 
 ### 持续霸榜
-- **ai-job-search**：周增 13,847 star，日增 3,716，还在加速。求职 AI 这个赛道的热度超出预期。
-- **system_prompts_leaks**：周增 7,149，持续更新的内容自然吸引回访。
+- **addyosmani/agent-skills** — 日榜 +1,116、周榜 +7,944，稳定输出，说明不是一天的热度而是持续的需求。
+- **iOfficeAI/OfficeCLI** — 日榜 +1,224、周榜 +5,789，Agent + Office 这个赛道被验证了。
 
 ### 本周新晋黑马
-- **meetily**（+8,885/周）：本地 AI 会议工具突然爆发，可能跟某个版本更新或 KOL 推荐有关。
-- **usestrix/strix**（+8,370/周）：AI 渗透测试工具周增 8000+，安全 AI 赛道热度起来了。
-- **OmniRoute**（+4,119/周）：免费 AI 网关，一个端点接 231+ 供应商，50+ 免费。对省钱党来说太有吸引力了。
-- **ai-berkshire**（+3,757/周）：巴菲特+芒格+段永平+李录的价值投资框架，用多 Agent 做对抗性研究分析。金融 AI 的有趣尝试。
+- **asgeirtj/system_prompts_leaks**（周 +7,765）— 收集各家 AI 系统 prompt 的泄露合集。Claude Fable 5、GPT-5.6、Gemini 3.5 的 prompt 都在里面。争议性强但传播力惊人。
+- **usestrix/strix**（周 +6,443）— AI 渗透测试工具。用 AI 找漏洞 + 自动修复。安全赛道 + AI = 新热点。
+- **ogulcancelik/herdr**（周 +4,714）— 终端里的 Agent 多路复用器，同时跑多个 Agent。Rust 写的。
 
 ---
 
 ## 🎬 视频选题建议
 
-### 选题 1：「我用 AI Agent 自动求职，投了 100 份简历...」
-以 ai-job-search 为主角，展示 AI 自动评估岗位 → 定制简历 → 写求职信的完整流程。天然有话题性和争议性（AI 投简历算不算作弊？）。可以搭配 system_prompts_leaks 讲讲背后的 prompt 设计。
+### 选题 1：「Agent Skills 是什么？为什么 GitHub 前 10 全是它」
+角度：从今天的 Trending 现象切入，讲清楚 2026 年 AI 编程的新范式——Skills > Prompts。实操演示怎么用 Matt Pocock / Addy Osmani 的 skills 提升 Claude Code 的效果，最后给出自己组织 skills 的最佳实践。流量保证 + 技术深度。
 
-### 选题 2：「2026 年 AI Agent 工具链全景图」
-从今天的 trending 里梳理出 Agent 生态全景：技能层（agent-skills）→ 设计层（design.md）→ 沙箱层（CubeSandbox）→ 编排层（orca/herdr）→ 网关层（OmniRoute）。讲清楚每个环节解决什么问题，帮观众建立全局认知。
+### 选题 2：「省 65% 的钱？Caveman 穴居人 Prompt 压缩实测」
+角度：猎奇标题 + 实用内容。先讲原理（为什么少说话 Agent 反而理解更好），再实测对比 token 消耗和输出质量，最后讨论 token 经济学——2026 年跑 Agent 到底要花多少钱。
 
 ---
 
-*数据采集时间：2026-07-10 09:00 | 来源：GitHub Trending 日榜 + 周榜 + Python/TypeScript/Rust/Go 语言分榜*
+*报告生成时间：2026-07-10 09:00 | 数据来源：GitHub Trending*
