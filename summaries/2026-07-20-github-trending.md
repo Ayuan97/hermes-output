@@ -1,159 +1,142 @@
-# 🔥 GitHub 趋势速览 — 2026年7月20日（周日）
+# 🔥 GitHub 趋势速览 — 2026-07-20（周日）
 
 ## 一句话总览
 
-**周末 GitHub 热度略降，但 AI Agent 生态依然是绝对主线。** "Agent Skills"、开源编程 Agent 三国杀、"反AI Slop"设计运动三条线继续发酵。本周最大看点是 AI Agent 从"写代码"全面扩展到求职、办公、交易、安全等具体业务场景。
-
-> ⚠️ 注：今日因网络原因（Clash TUN 模式 TLS 握手故障）无法直接抓取 GitHub Trending 实时数据，本报告综合 7月18-19日数据及多源交叉验证生成。
+**"Agent Skills" 生态全面爆发。** 本周 GitHub 被 AI Agent 工具链屠榜——从 Matt Pocock 的 skills 仓库（周增 1 万+ star）到各种 Agent Skill 生成器，再到 MCP 协议相关的代码智能、语音 AI、CLI 编码 Agent，整个 AI 开发工具栈都在高速增长。另一个显著信号：**开源替代商业 SaaS** 的趋势在加速（CapCut 替代品、Semrush 替代品、自托管部署平台都上了榜）。
 
 ---
 
-## 🚀 爆款项目 TOP 5
+## 🚀 爆款项目 TOP 5（按日增 star 排序）
 
-### 1. Nutlope/hallmark ⭐+1,485/day（周增 ~8,800+）
-- **链接**：https://github.com/Nutlope/hallmark
-- **语言**：CSS | **总 Star**：~12,000+
-- **一句话**：给 Claude Code/Cursor/Codex 用的"反 AI 废话"设计技能包——让 AI 生成的 UI 告别千篇一律的"AI 样板房"风格。
-- **为什么火**：AI 编码工具普及后的最大痛点就是"AI 味太重"。hallmark 精准击中这个痛点，一个 CSS 技能包居然周增近 9000 star，说明"去 AI 味"是真刚需。
-- **跟主子的关系**：**视频选题金矿**！"如何让 AI 生成的代码不像 AI 写的"这个角度自带流量。也可以直接 clone 到自己的 `.claude/` 目录用起来。
+### 1. [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph)
+⭐ 23,173 | **+1,833/day** | Python
 
-### 2. codecrafters-io/build-your-own-x ⭐+1,068~1,126/day
-- **链接**：https://github.com/codecrafters-io/build-your-own-x
-- **语言**：Markdown | **总 Star**：527,000+
-- **一句话**：「从零造轮子」超级 awesome 列表——Redis、Git、Docker、数据库、编译器… 什么都能 DIY。
-- **为什么火**：常青项目，AI 时代反而让更多人想理解底层原理。连续霸榜多周，是 GitHub 上最受欢迎的学习资源之一。
-- **跟主子的关系**：每个"从零实现 XXX"都可以拆成一期技术视频。做"程序员必收藏"类内容的素材库。
+> 本地优先的代码智能图谱，为 MCP 和 CLI 构建代码库持久化地图，让 AI 编码工具只读取必要的上下文。
 
-### 3. OpenCut-app/OpenCut ⭐+1,074/day（周增 ~13,000+）
-- **链接**：https://github.com/OpenCut-app/OpenCut
-- **语言**：TypeScript | **总 Star**：~75,000
-- **一句话**：开源版 CapCut（剪映国际版），浏览器+桌面端全功能视频编辑器。
-- **为什么火**：CapCut 全球数亿用户但闭源+付费墙，OpenCut 用 MIT 协议开源了同样功能。连续多周霸榜，是 2026 年夏天最火的开源替代品之一。
-- **跟主子的关系**：如果做视频可以直接试试替代 CapCut。也适合做"开源替代"系列选题。
+**为什么火：** 解决了 AI 编码助手在大仓库中"上下文爆炸"的核心痛点。通过构建代码依赖图谱，精准裁剪传给 LLM 的上下文窗口，实测能大幅降低 token 消耗。
 
-### 4. Robbyant/lingbot-map ⭐+831/day
-- **链接**：https://github.com/Robbyant/lingbot-map
-- **语言**：Python
-- **一句话**：前馈式 3D 基础模型——从流式数据实时重建 3D 场景，不需要迭代优化（区别于 NeRF/3DGS）。
-- **为什么火**：纯前馈推理就能做 3D 重建，速度可以处理实时视频流。3D 视觉领域的突破性工作。
-- **跟主子的关系**：技术含量很高，适合做深度技术解读视频。3D 重建+实时处理是 AR/VR 和自动驾驶的核心技术。
+**价值：** 主子日常用 AI 辅助编码，这个直接解决大项目 context 塞不下的问题。值得 clone 试试，特别是配合 MCP 使用。
 
-### 5. MadsLorentzen/ai-job-search ⭐+13,195/week（本周黑马）
-- **链接**：https://github.com/MadsLorentzen/ai-job-search
-- **语言**：TypeScript | **总 Star**：22,804
-- **一句话**：基于 Claude Code 的 AI 求职自动化框架——评估职位描述、定制简历、撰写求职信、准备面试，全部本地执行。
-- **为什么火**：本周新增 star 最多的项目！MIT 协议，Fork 后即可完全拥有自己的求职流水线。反映出 AI 正在渗透到"找工作"这个最个人化的场景。
-- **跟主子的关系**：即使不求职也值得看其架构设计——如何把 Agent 串联成一个完整的自动化工作流。做视频选题也很有话题性："AI 帮你找工作"。
+### 2. [oblien/openship](https://github.com/oblien/openship)
+⭐ 4,803 | **+1,641/day** | TypeScript
+
+> 自托管部署平台。
+
+**为什么火：** Vercel/Netlify 的开源替代品，在 AI 时代开发者对自托管的需求持续增长（数据隐私、成本控制）。日增 1,600+ 说明社区对"去平台锁定"的呼声很高。
+
+**价值：** 如果主子有自己的项目需要部署且不想被平台绑架，值得关注。也适合做"自托管全家桶"选题。
+
+### 3. [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute)
+⭐ 21,829 | **+1,107/day** | TypeScript
+
+> 免费 MIT 协议的 AI 网关：一个端点接入 268+ 供应商（50+ 免费）、500+ 模型。支持 Claude、GPT、Gemini、Kimi K3 等，带配额感知自动降级、token 压缩（节省 15-95%）、MCP/A2A 支持。
+
+**为什么火：** 一站式 AI 模型路由+省钱方案。500+ 模型的统一接口 + 自动降级 + token 压缩，对重度 AI 用户来说是刚需。500+ 贡献者说明社区参与度很高。
+
+**价值：** 省钱利器。如果主子每月 API 费用不低，这个网关的自动降级和压缩功能可以直接用。也适合做"AI 开发省钱指南"选题。
+
+### 4. [every-app/open-seo](https://github.com/every-app/open-seo)
+⭐ 5,850 | **+939/day** | TypeScript
+
+> Semrush 和 Ahrefs 的开源替代品。
+
+**为什么火：** SEO 工具一直是高收费赛道（Semrush 月费 $130+），开源替代直接戳中独立开发者和中小团队的痛点。
+
+**价值：** 如果主子做内容/产品需要 SEO 分析，这个省下不少钱。也是"开源替代商业工具"系列的好选题。
+
+### 5. [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
+⭐ 134,710 | **+862/day** | Shell
+
+> 一整套 AI 代理机构——从前端专家到 Reddit 社区运营，从创意注入器到现实检验官。每个 Agent 都是有人格、有流程、有交付物的专业角色。
+
+**为什么火：** 13 万+ star 的超级项目，把"AI Agent 即员工"的理念落地成具体的 prompt+workflow 模板。Shell 脚本说明是轻量级方案，不需要复杂框架。
+
+**价值：** 可以直接拿来用或改造成自己的 Agent 团队。适合做"用 AI 组建虚拟团队"的选题。
 
 ---
 
 ## 📈 技术趋势洞察
 
-### 1. 🔥 Agent Skills 成为本周最大热词
-- mattpocock/skills（周增 11,131⭐）、hallmark（周增 ~8,800⭐）、anthropics/skills（日增 291⭐）、cangjie-skill（周增 1,224⭐）
-- "给 AI 写技能包"从个人实验变成了社区运动，Anthropic 官方下场做了 skills 仓库
-- **新信号**：cangjie-skill 把"知识蒸馏"引入 Agent Skills——把书、播客、长视频浓缩成可执行技能
+### 1. Agent Skills 生态爆发 🔥🔥🔥
+本周最突出的信号：**"Skills" 成为 AI Agent 生态的新范式**。
+- **mattpocock/skills**（周增 10,872）：Matt Pocock（TypeScript 圈大佬）分享的 Agent Skills 合集
+- **Nutlope/hallmark**（周增 9,173）：反"AI 审美"的设计 Skill，给 Claude Code/Cursor/Codex 用
+- **ibelick/ui-skills**（周增 1,925）：给设计工程师的 Skills
+- **kangarooking/cangjie-skill**（周增 1,342）：把书籍/视频/播客蒸馏成可执行的 Agent Skills
+- **tt-a1i/archify**（周增 2,102）：Agent Skill 生成架构图
 
-### 2. 🤖 AI 编程 Agent 三国杀
-- OpenAI Codex（周增 2,268⭐）、Open Interpreter（周增 2,344⭐）、OpenCode（日增 332⭐）三足鼎立
-- 全部在用 Rust 重写/构建，性能成了新战场
-- 趋势：AI 编程 Agent 已经从"能用"进入"好用"阶段，竞争焦点转向模型支持广度和执行效率
+**解读：** Agent 从"通用助手"进化到"专业技能包"模式。Skills = 可复用的 prompt+workflow+tool 组合，比 MCP server 更轻量，比纯 prompt 更结构化。这可能是 2026 年下半年 Agent 生态的核心范式。
 
-### 3. 🏗️ Agent 基础设施独立成赛道
-- stablyai/orca（多 Agent 编排 ADE，周增 5,409⭐）
-- TencentCloud/CubeSandbox（Agent 安全沙箱，周增 1,944⭐）
-- diegosouzapw/OmniRoute（AI 网关，周增 3,605⭐）
-- 当"一个 Agent 做一件事"成熟后，"管理一群 Agent"正在成为新基础设施需求
+### 2. CLI 编码 Agent 军备竞赛继续
+- **openai/codex**（10 万 star，周增 2,448）
+- **MoonshotAI/kimi-cli**（日增 410）
+- **1jehuang/jcode**（日增 568，Rust）
+- **openinterpreter/openinterpreter**（周增 2,644，转向 Rust）
 
-### 4. 🎨 "反 AI Slop"设计运动兴起
-- hallmark + impeccable 都在做同一件事：让 AI 生成的 UI 不再千篇一律
-- 这是 AI 编码工具成熟的标志——社区开始关注"AI 代码质量"而非"AI 能不能写代码"
+**解读：** 终端里的编码 Agent 已经从新鲜事物变成标配工具。竞争焦点转向：语言支持广度、上下文管理、安全护栏（destructive_command_guard 就是配套产物）。
 
-### 5. 📊 语言/框架热度
-| 语言 | 趋势 | 说明 |
-|------|------|------|
-| Python | 🔥🔥🔥 | Agent Skills + 3D 视觉 + 教育 AI，绝对主力 |
-| TypeScript | 🔥🔥🔥 | Agent 前端 + 视频编辑 + 编程 Agent |
-| Rust | 🔥🔥 | 编程 Agent 集体 Rust 重写，性能敏感场景首选 |
-| C# | 🔥 | OfficeCLI 单二进制 AI Office 套件，出人意料 |
+### 3. 语音 AI 三件套上榜
+- **jamiepine/voicebox**（日增 821）：开源 AI 语音工作室
+- **handy-computer/transcribe.cpp**（日增 395）：支持 16+ 模型家族的 STT
+- **moonshine-ai/moonshine**（日增 282）：超低延迟语音交互
+
+**解读：** 语音 Agent 从玩具走向生产级。低延迟 STT+TTS+意图识别的全栈方案开始成熟。
+
+### 4. MCP 协议渗透率持续扩大
+日榜中有 4 个项目直接提到 MCP（code-review-graph、OmniRoute、wigolo、fastmcp），说明 MCP 正在成为 AI 工具互操作的事实标准。
+
+### 5. Rust 在 AI 工具链中的地位稳固
+jcode、topcoat、destructive_command_guard、codex、openinterpreter 都用 Rust，AI 基础设施工具的"性能敏感层"正在全面 Rust 化。
 
 ---
 
 ## 💡 值得深挖 TOP 3
 
-### 1. Graphify-Labs/graphify ⭐+6,724~8,611/week
-- **链接**：https://github.com/Graphify-Labs/graphify
-- **理由**：把代码、SQL、文档变成可查询的知识图谱，兼容 Claude Code/Codex/Cursor 等所有主流编程助手。总星标 87,350，是本周 star 总数最高的项目。
-- **建议**：clone 下来在自己的项目上试试。如果知识图谱真能提升 AI 编程助手的理解深度，这将改变大仓库的 AI 编程方式。
+### 1. [code-review-graph](https://github.com/tirth8205/code-review-graph)
+**建议：** clone 下来在自己的项目上跑一下。如果 context 裁剪效果好，可以整合进日常编码流程。也可以作为"MCP + 代码图谱"技术方案的参考。
 
-### 2. usestrix/strix ⭐+3,090/week
-- **链接**：https://github.com/usestrix/strix
-- **理由**：AI 自动渗透测试工具（总星标 41,743），用 Agent 自动发现并修复应用漏洞。安全+AI 的交叉赛道正在升温。
-- **建议**：关注技术架构。安全测试自动化是个大市场，看看它如何把 Agent 应用到安全领域。
+### 2. [OmniRoute](https://github.com/diegosouzapw/OmniRoute)
+**建议：** 认真评估作为日常 API 网关的可行性。268 个供应商 + 自动降级 + token 压缩，如果能跑稳就是大省钱。值得做个对比测试（延迟、稳定性、实际压缩效果）。
 
-### 3. kangarooking/cangjie-skill ⭐+1,224/week
-- **链接**：https://github.com/kangarooking/cangjie-skill
-- **理由**：中文项目，把书籍、长视频、播客"蒸馏"成可执行的 Agent Skills。名字取"仓颉造字"典故，产品思路和产品名都很有品味。
-- **建议**：深入研究"知识→技能"的转化机制。这可能是 AI 知识管理的新方向，也适合做"AI 学习助手"类视频选题。
+### 3. [mattpocock/skills](https://github.com/mattpocock/skills)
+**建议：** 研究 Skills 的写法和结构。这是 Matt Pocock 从自己 .agents 目录拿出来的实战经验，学一下怎么写出高质量的 Agent Skill。如果主子在用 Claude Code 或 Codex，直接可以用。
 
 ---
 
-## 📅 周榜亮点
+## 📅 周榜亮点（与日榜差异）
 
 ### 持续霸榜
-- **OpenCut**（周增 13,000+）：开源视频编辑器，连续多周第一梯队
-- **build-your-own-x**（日增 1,000+）：永不过时的学习资源库
-- **awesome-llm-apps**（周增 6,252，总 123,609）：LLM 应用合集常青藤
+- **codecrafters-io/build-your-own-x**（52 万 star，周增 4,863）：永远的教育类第一
+- **Shubhamsaboo/awesome-llm-apps**（12 万 star，周增 5,857）：AI 应用合集常青树
 
-### 本周新晋黑马
-- **ai-job-search**（周增 13,195）：AI 求职自动化，本周新增 star 之王
-- **hallmark**（周增 ~8,800）：一个 CSS 技能包涨到这个数，说明"AI 设计质量"是真痛点
-- **Vibe-Trading**（周增 5,616）：港大出的 AI 交易 Agent，"Vibe Coding"延伸到"Vibe Trading"
-
-### 上周→本周趋势延续
-- Agent Skills 从上周开始爆发，本周进一步加速
-- 开源替代品（OpenCut、OfficeCLI、OmniRoute）持续走强
-- AI 编程 Agent 三国杀格局稳定，没有新的大玩家入场
+### 本周黑马
+- **OpenCut-app/OpenCut**（7.6 万 star，**周增 11,676**）：开源版 CapCut，本周增 star 冠军。视频编辑工具开源化是大趋势。
+- **HKUDS/Vibe-Trading**（2.5 万 star，周增 4,387）：港大出品的 AI 交易 Agent，"Vibe Trading"这个概念很新——让 AI 自己感受市场节奏做交易。
+- **iOfficeAI/OfficeCLI**（2 万 star，周增 4,140）：专门为 AI Agent 设计的 Office 套件（C#），不需要安装 Office 就能读写 Word/Excel/PPT。Agent 自动化的关键基础设施。
+- **Dicklesworthstone/destructive_command_guard**（5,198 star，周增 1,410）：阻止 AI Agent 执行危险命令的护栏工具，Rust 写的。Agent 安全方向的标志性项目。
 
 ---
 
 ## 🎬 视频选题建议
 
-### 选题 1：「AI 编程助手的 "技能包" 到底是什么？为什么所有人都在写？」
-- **角度**：从 hallmark 的"反 AI 废话"设计技能切入，展示 Agent Skills 的概念（给 AI 写操作手册），然后串讲 mattpocock/skills、cangjie-skill、Anthropic 官方 skills。
-- **目标观众**：使用 Claude Code/Cursor/Copilot 的开发者
-- **预期流量**：⭐⭐⭐⭐⭐（概念新、实用性强、有争议性）
+### 选题 1：「Agent Skills 是什么？为什么 Matt Pocock 的 Skills 仓库一周涨了 1 万 star」
+**角度：** 从 mattpocock/skills、hallmark、cangjie-skill 这几个项目切入，讲清楚 Agent Skills 这个新范式——它比 MCP 轻量、比纯 prompt 结构化，是 2026 年 Agent 生态的关键拼图。可以演示怎么用 Skills 提升编码效率。
 
-### 选题 2：「开源编程 Agent 三国杀：Codex vs Open Interpreter vs OpenCode 横评」
-- **角度**：三款工具从安装到实战体验对比——模型支持、性能、开源程度、适用场景。
-- **目标观众**：对 AI 编程感兴趣的中高级开发者
-- **预期流量**：⭐⭐⭐⭐（横评类自带流量，当前最热赛道）
+### 选题 2：「我用开源工具替代了每月 $500 的 SaaS 订阅」
+**角度：** 把 OpenCut（替代 CapCut）、open-seo（替代 Semrush）、OmniRoute（替代各 API 直连）、openship（替代 Vercel）串起来，做一个"开源替代全家桶"的实操演示。省钱永远是流量密码。
 
 ---
 
-## 📊 数据附录
+## 📊 今日语言分布
 
-### 本周综合热度 TOP 15
-
-| # | 项目 | 周增 Star | 语言 | 定位 |
-|---|------|---------|------|------|
-| 1 | MadsLorentzen/ai-job-search | +13,195 | TypeScript | AI 求职自动化 |
-| 2 | OpenCut-app/OpenCut | +13,000+ | TypeScript | 开源视频编辑器 |
-| 3 | mattpocock/skills | +11,131 | Shell | Claude Code 技能库 |
-| 4 | Nutlope/hallmark | +8,800+ | CSS | 反 AI Slop 设计技能 |
-| 5 | Graphify-Labs/graphify | +8,611 | Python | 知识图谱 Agent Skill |
-| 6 | Shubhamsaboo/awesome-llm-apps | +6,252 | Python | LLM 应用合集 |
-| 7 | stablyai/orca | +5,520 | TypeScript | 多 Agent 编排 ADE |
-| 8 | HKUDS/Vibe-Trading | +5,616 | Python | AI 交易 Agent |
-| 9 | iOfficeAI/OfficeCLI | +4,611 | C# | AI Agent Office 套件 |
-| 10 | Zackriya-Solutions/meetily | +4,389 | Rust | 本地 AI 会议助手 |
-| 11 | diegosouzapw/OmniRoute | +4,297 | TypeScript | 免费 AI API 网关 |
-| 12 | usestrix/strix | +3,090 | Python | AI 渗透测试 |
-| 13 | openinterpreter/openinterpreter | +2,344 | Rust | 开源编程 Agent |
-| 14 | openai/codex | +2,268 | Rust | OpenAI 编程 Agent |
-| 15 | TencentCloud/CubeSandbox | +1,944 | Go | Agent 安全沙箱 |
+| 语言 | 日榜项目数 | 趋势 |
+|------|-----------|------|
+| Python | 8 | AI/ML 主力语言，稳固 |
+| TypeScript | 8 | 全栈 + AI 工具链 |
+| Rust | 2 | AI 基础设施层 |
+| C++ | 2 | 语音 AI 推理引擎 |
+| Shell | 1 | Agent Skills 载体 |
 
 ---
 
-*报告生成时间：2026-07-20 09:00 | 数据来源：GitHub Trending + 多源交叉验证*
-*注：今日因 Clash Verge TUN 模式 TLS 握手故障无法直连 GitHub，数据综合 7/18-7/19 日榜及 7/15 周榜生成*
+*数据采集时间：2026-07-20 09:00 | 来源：GitHub Trending*
